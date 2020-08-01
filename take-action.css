@@ -1,0 +1,260 @@
+body {
+  background-color: #ECE9E9;
+}
+/*Header*/
+#action-pic {
+  background-image: url("https://images.unsplash.com/flagged/photo-1579133311477-9121405c78dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+}
+
+#action-header {
+  padding-top: 10%;
+}
+
+/*Donate Button*/
+.button {
+  text-align: center;
+  background-color: #66000000;
+  color: #FFD6BA;
+  border: 3px solid #FFD6BA;
+  font-family: "Nunito"; 
+  font-size: 20px;
+  padding: 13px 25px;
+  margin-left: 44%;
+  transition-duration: 0.4s;
+  border-radius: 13%;
+  cursor: pointer;
+  animation: header-animation 2s ease-in-out forwards;
+}
+
+button:hover {
+  background-color: #F6F4F4;
+  border: 3px solid #CC5500;
+  color: #CC5500;
+}
+
+/* Subheading*/
+h2{
+  font-family:"Nunito";
+  font-size: 30px;
+  text-align: center;
+  color: #555B6E;
+  padding: 1%;
+}
+
+/*Main text*/
+.action-info-container {
+  background-color: #ECE9E9;
+  padding: 35px;
+}
+
+/*Collapsible*/
+.collapsible {
+  background-color:#B6CECC;
+  color: #555B6E;
+  cursor: pointer;
+  padding: 18px;
+  padding-left: 40px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  margin-left: 10%;
+}
+
+.active, .collapsible:hover {
+  background-color: #DAE7E5;
+  border: none;
+  color: #555B6E;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 77%;
+  margin-left: 10%;
+}
+
+.collapsible:after {
+  content: '\02795'; 
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; 
+}
+  
+
+/* Screen Size */
+@media only screen and (max-width: 700px) {
+  .flex-container-action {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .flex-container-action {
+    flex-wrap: wrap;
+  }
+
+  .left-container {
+    width: 50%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .flex-container-action {
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .flex-container-action {
+    flex-wrap: nowrap;
+  }
+
+  #list-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px 20px 40px 40px;
+  }
+
+  .left-container {
+    width: 50%;
+    margin-right: 10%;
+  }
+}
+
+
+
+/* Slideshow*/
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+  background-color: white;
+}
+
+.mySlides {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+/*Slideshow text*/
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+  text-align: right; 
+}
+
+#slide-1{
+  margin-bottom:15%;
+}
+
+#slide-2{
+  margin-left: 78%;
+  margin-right: 0%;
+}
+
+#slide-5 {
+  margin-right: 1%;
+}
+
+/*Slideshow heading*/
+h3 {
+  font-size: 20px;
+  margin-right: 10%;
+}
+
+h3 a{
+  color: #555B6E;
+}
+
+img{
+  padding: 15px;
+}
+
+/* Arrow buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.8s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Dots on bottom of slideshow */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
